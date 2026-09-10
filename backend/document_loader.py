@@ -28,4 +28,5 @@ def get_vector_store():
         embedding=embeddings,
         persist_directory=CHROMA_DIR
     )
+    
     return vectorstore

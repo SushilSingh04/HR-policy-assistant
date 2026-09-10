@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from backend.agents import run_hr_assistant
+from agents import run_hr_assistant
 
 app = FastAPI(title="HR Policy Assistant API")
 
