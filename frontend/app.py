@@ -3,7 +3,7 @@ import requests
 import json
 import time
 
-BACKEND_URL = st.secrets["https://hr-policy-assistant-mca9.onrender.com/"]
+BACKEND_URL = st.secrets["BACKEND_URL"]
 
 st.set_page_config(
     page_title="HR Policy Assistant",
