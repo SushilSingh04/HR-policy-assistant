@@ -3,6 +3,8 @@ import requests
 import json
 import time
 
+BACKEND_URL = st.secrets["https://hr-policy-assistant-mca9.onrender.com/"]
+
 st.set_page_config(
     page_title="HR Policy Assistant",
     page_icon="⚖️",
@@ -84,7 +86,7 @@ if st.button("Evaluate Case"):
                 time.sleep(1)
                 
                 response = requests.post(
-                    "http://localhost:8000/api/evaluate-case",
+                    f"{BACKEND_URL}/api/evaluate-case",
                     json={"case_details": case_details},
                     timeout=60
                 )
