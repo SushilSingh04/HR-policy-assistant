@@ -3,7 +3,7 @@ from typing import TypedDict, List
 from langgraph.graph import StateGraph, END
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage
-from backend.document_loader import get_vector_store
+from document_loader import get_vector_store
 from dotenv import load_dotenv
 
 load_dotenv()
